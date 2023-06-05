@@ -9,4 +9,31 @@
 }
 .container-conteudo{
     max-width: 1480px;
+    margin: auto;
+}
+.header{
+   display: grid;
+   grid-template-columns: repeat( 3, 1fr);
+   background-color: blue;
+   justify-items: center;
+   align-items: center;
+}
+.localizacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.localizacao h1{
+    font-size: 16px;
+    margin: 0 10px 0 10px;
+}
+.search-login{
+    display: flex;
+}
+.seacrch-body{
+    margin: 0 10px 0 10px;
+}
+.login-body{
+    margin: 0 10px 0 10px;
 }
