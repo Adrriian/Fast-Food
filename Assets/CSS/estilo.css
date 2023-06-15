@@ -38,9 +38,14 @@
     width: 100%;
     background-color: #FFB800;
 }
+.container.bg2{
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+}
 .container-conteudo{
     max-width: 1480px;
     margin: auto;
+
 }
 a{
     text-decoration: none;
@@ -343,7 +348,6 @@ a{
 }
 .work-area{
     margin-top: 50px;
-    background-image: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
 }
 .work-header{
     text-align: center;
@@ -355,6 +359,7 @@ a{
 }
 .work-header h1{
     color: var(--cl-primeira);
+    padding-top: 60px;
 }
 .work-area-body{
     display: grid;
@@ -450,4 +455,106 @@ a{
 }
 .popular-items-item1 a{
     margin-top: 10px;
+}
+.featured-restaurants-header{
+    text-align: center;
+}
+.featured-restaurants-header h1{
+    font-size: var(--fts-quarta);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    margin-top: 150px;
+}
+.featured-restaurants-body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.featured-restaurants-item1 h3{
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(241, 114, 40, 0.2);
+    color: var(--cl-primeira);
+    display: inline-block;
+    border-radius: 10px;
+}
+.featured-restaurants-item-area{
+    font-family: "Source Code Pro";
+}
+.featured-restaurants-item1-img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.featured-restaurants-item1-img img{
+    border-radius: 15px;
+    width: 300px;
+}
+.featured-restaurants-item1-desconto{
+    background-color: var(--bg-terceiro);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.featured-restaurants-item1-desconto img{
+    width: 20px;
+}
+.featured-restaurants-item1-desconto h1{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+}
+.featured-restaurants-item1-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primeiro);
+    margin-left: -130px;
+    margin-top: 30px;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.featured-restaurants-item1-temp  img{
+    width: 20px;
+}
+.featured-restaurants-item1-temp h1{
+    margin-left: 10px;
+    color: white;
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+}
+
+.featured-restaurants-item1-text{
+    display: flex;
+    font-family: "Source Code Pro";
+    margin-top: 20px;
+}
+.featured-restaurants-item1-text2 {
+    margin-left: 10px;
+}
+.featured-restaurants-item1-text2 h1{
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    margin-left: 5px;
+}
+.featured-restaurants-item1-estrela{
+    display: flex;
+}
+.featured-restaurants-item1-estrela h1{
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    color: var(--cl-oitavo);
 }
