@@ -308,6 +308,7 @@ a{
 }
 .lista-de-pratos-item1-img img{
     border-radius: 20px;
+    width: 340px;
 }
 .lista-de-pratos-item1-desconto{
     background-color: #FFB30E;
@@ -318,6 +319,9 @@ a{
     border-radius: 0 20px 0 20px;
     margin-right: -140px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .lista-de-pratos-item1-desconto2{
     display: flex;
@@ -327,9 +331,9 @@ a{
     justify-content: center;
     margin-top: 10px;
 }
-.lista-de-pratos-item1-desconto > h1{
+.lista-de-pratos-item1-desconto h1{
     font-weight: var(--ft--weight-segunda);
-    font-size: var(--fts-quatro);
+    font-size: var(--fts-quinta);
     font-family: "Source Code Pro";
     color: white;
     display: inline-block;
@@ -359,11 +363,13 @@ a{
 }
 .work-header h1{
     color: var(--cl-primeira);
-    padding-top: 60px;
+    padding-top: 80px;
 }
 .work-area-body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
+    justify-items: center;
 }
 .work-item {
     width: 330px;
@@ -386,7 +392,10 @@ a{
     text-align: center;
 }
 
-
+.container-conteudo.wt{
+    width: 100%;
+    max-width: none;
+}
 .popular-items-area{
     font-family: "Source Code Pro";
     margin-top: 150px;
@@ -404,8 +413,8 @@ a{
 }
 .popular-items-body{
     display: grid;
-    grid-template-columns: 60px 1fr 60px;
-    margin-top: 30px;
+    grid-template-columns: 90px 1fr 90px;
+    margin-top: 100px;
 }
 .popular-items-seta{
     display: inline-block;
@@ -429,7 +438,7 @@ a{
 }
 .popular-items-item1 > img{
     border-radius: 20px;
-    width: 200px;
+    width: 250px;
 }
 .popular-items-item1 h1{
     font-size: var(--fts-segundo);
@@ -456,6 +465,12 @@ a{
 .popular-items-item1 a{
     margin-top: 10px;
 }
+.featured-restaurants-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .featured-restaurants-header{
     text-align: center;
 }
@@ -468,6 +483,11 @@ a{
 .featured-restaurants-body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+}
+.featured-restaurants-item1{
+    margin-bottom: 70px;
+    margin-left: 40px;
 }
 .featured-restaurants-item1 h3{
     font-size: var(--fts-segundo);
@@ -479,6 +499,10 @@ a{
     color: var(--cl-primeira);
     display: inline-block;
     border-radius: 10px;
+}
+.featured-restaurants-item1 h3.green{
+    background: rgba(121, 185, 60, 0.2);
+    color:#79B93C;
 }
 .featured-restaurants-item-area{
     font-family: "Source Code Pro";
@@ -539,6 +563,7 @@ a{
     display: flex;
     font-family: "Source Code Pro";
     margin-top: 20px;
+    justify-content: flex-start;
 }
 .featured-restaurants-item1-text2 {
     margin-left: 10px;
@@ -549,6 +574,9 @@ a{
     font-family: "Source Code Pro";
     margin-left: 5px;
 }
+.featured-restaurants-item1-text2 h1.fts{
+    font-size: 19px;
+}
 .featured-restaurants-item1-estrela{
     display: flex;
 }
@@ -557,4 +585,21 @@ a{
     font-weight: var(--ft--weight-segunda);
     font-family: "Source Code Pro";
     color: var(--cl-oitavo);
+}
+.botao{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-terceiro);
+    border-radius: 10px;
+    color: white;
+}
+.botao a{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-segunda);
+    color: white;
+    display: flex;
+    font-family: "Source Code Pro";
 }
