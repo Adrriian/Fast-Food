@@ -849,3 +849,31 @@ footer{
     height: 800px;
     background: #212121;
 }
+
+.footer-item1{
+    padding-top: 100px;
+}
+.footer-item1 h1{
+    color: white;
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+}
+.footer-body{
+    margin-top: 50px;
+}
+.footer-cidades-area{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-bottom: 1px solid #424242 ;
+}
+.footer-cidades{
+    margin-bottom: 100px;
+}
+.footer-cidades h1{
+    margin-top: 15px;
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    color: #F5F5F5;
+    font-family: "Source Code Pro";
+}
