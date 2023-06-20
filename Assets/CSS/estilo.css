@@ -21,6 +21,7 @@
     --cl-sexta:#9E9E9E;
     --cl-setima:#212121;
     --cl-oitavo: #FFB30E;
+    --cl-nona: linear-gradient(92.84deg, #FB3C00 -47.72%, #FFB800 136.81%);
     --bg-primeiro:#FFB800;
     --bg-segundo:#F5F5F5;
     --bg-terceiro:#F17228;
@@ -602,4 +603,249 @@ a{
     color: white;
     display: flex;
     font-family: "Source Code Pro";
+}
+
+.container.bg3{
+    background-color: #FEFAF1;
+}
+
+.food-area{
+    display: grid;
+    grid-template-rows: 100px;
+    padding-top: 100px;
+}
+.food-header{
+    display: flex;
+    justify-content: space-between;
+}
+.food-busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food-title h1{
+    font-size: var(--fts-terceira);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+}
+.food-busca a{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    color: var(--cl-primeira);
+    margin: 10px;
+}
+.food-seta-esquerda{
+    background-color: #F17228;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.food-seta-direita{
+    background-color: #F17228;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.food-body{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.food-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.food-lista img{
+    border-radius: 120px;
+}
+.food-lista h1{
+    margin-top: 15px;
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+}
+.container.bg4{
+    background: linear-gradient(180deg, #FEEFD0 , #FF8A00 );
+}
+.app-area{
+    padding-top: 100px;
+}
+.app-header{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.app-item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #CFCFCF;
+    margin-left: 80px;
+}
+.app-item1:first-child{
+    margin-left: 0;
+}
+.app-item1:last-child{
+    border: none;
+}
+
+.gradient{  
+    background: linear-gradient(92.84deg, #FB3C00 -47.72%, #FFB800 136.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.app-item1 h1{
+    font-size: 35px;
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    margin-right: 50px;
+    margin-left: 30px;
+}
+.app-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+}
+.app-img{
+    margin-top: 15px;
+}
+.app-img img{
+    margin-bottom: -5px;
+}
+.app-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 100px;
+}
+.app-text h1{
+    font-size: var(--fts-quinta);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    color: var(--cl-primeira);
+}
+.app-text p{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    font-family: "Open Sans";
+    color: #827E7E;
+    margin-top: 50px;
+}
+.app-text-img{
+    margin-top: 50px;
+    margin-left: -35px;
+}
+.ilustracao-area{
+    margin-top: 100px;
+   
+}
+.ilustraca-item1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(124, 124, 124, 0.06);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.ilustracao-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+}
+.ilustracao-text h1{
+    font-size: var(--fts-quarta);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+}
+.ilustracao-text span{
+    color: var(--cl-oitavo);
+}
+.ilustracao-text p{
+    font-size: var(--fts-primeira);
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: rgba(97, 97, 97, 0.69);
+    margin-top: 15px;
+}
+.ilustracao-text a{
+    margin-top: 100px;
+    font-family: "Source Code Pro";
+    font-size: var(--fts-primeira);
+    width: 400px;
+    height: 60px;
+    padding: 15px;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+}
+.ilustracao-img img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ilustracao-text.two{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.ilustracao-img.two{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.container.bg6{
+    background-image: url(../Imagens/Img/Imagebase2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.banner-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+}
+.banner-text{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h1{
+    font-size: 58px;
+    font-family: "Source Code Pro";
+    color: white;
+    text-align: center;
+}
+.banner-text a{
+    margin-top: 50px;
+    font-family: "Source Code Pro";
+    font-size: var(--fts-primeira);
+    width: 400px;
+    height: 60px;
+    padding: 15px;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+}
+footer{
+    color: white;
+    height: 800px;
+    background: #212121;
 }
