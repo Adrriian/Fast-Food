@@ -61,6 +61,7 @@ a{
     border-radius: 10px;
     color: white;
     text-align: center;
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
 }
 .button:hover{
     cursor: pointer;
@@ -246,7 +247,6 @@ a{
     border: 0;
 }
 .header-area1-item2-localizacao-search input::placeholder{
-    padding-left: 30px;
     font-size: var(--ft--weight-primeiro);
     font-weight: var(--ft--weight-primeiro);
     font-family: "opens+sans";
@@ -414,12 +414,13 @@ a{
 }
 .popular-items-body{
     display: grid;
-    grid-template-columns: 90px 1fr 90px;
+    grid-template-columns: repeat(3,1fr);
     margin-top: 100px;
 }
 .popular-items-seta{
     display: inline-block;
     margin: auto;
+    cursor: pointer;
 }
 .popular-items-seta img{
     background-color: var(--bg-primeiro); 
@@ -428,18 +429,21 @@ a{
     width: 50px;
 }
 .popular-items-item-area{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .popular-items-item1 {
     display: flex;
     flex-direction: column;
- 
+    margin: 20px;
+}
+.popular-items-item1 a.button{
+    width: 100%;
 }
 .popular-items-item1 > img{
     border-radius: 20px;
-    width: 250px;
+
 }
 .popular-items-item1 h1{
     font-size: var(--fts-segundo);
@@ -471,6 +475,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 .featured-restaurants-header{
     text-align: center;
@@ -487,8 +492,7 @@ a{
     margin-top: 100px;
 }
 .featured-restaurants-item1{
-    margin-bottom: 70px;
-    margin-left: 40px;
+    margin: 20px 20px 70px 50px;
 }
 .featured-restaurants-item1 h3{
     font-size: var(--fts-segundo);
@@ -515,7 +519,6 @@ a{
 }
 .featured-restaurants-item1-img img{
     border-radius: 15px;
-    width: 300px;
 }
 .featured-restaurants-item1-desconto{
     background-color: var(--bg-terceiro);
@@ -613,6 +616,7 @@ a{
     display: grid;
     grid-template-rows: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .food-header{
     display: flex;
@@ -809,6 +813,14 @@ a{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.ilustracao-img.two img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .container.bg6{
     background-image: url(../Imagens/Img/Imagebase2.png);
@@ -819,7 +831,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:400px;
+    height:390px;
 }
 .banner-text{
     width: 800px;
@@ -846,7 +858,6 @@ a{
 }
 footer{
     color: white;
-    height: 800px;
     background: #212121;
 }
 
@@ -876,4 +887,260 @@ footer{
     font-weight: var(--ft--weight-primeiro);
     color: #F5F5F5;
     font-family: "Source Code Pro";
+}
+.footer-cotato-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #424242 ;
+}
+.footer-cotato{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-item2 h1{
+    font-size: var(--fts-segundo);
+    font-weight: var(--ft--weight-segunda);
+    color: white;
+    font-family: "Source Code Pro";
+    margin-bottom: 25px;
+}
+.footer-item2 h2{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    color: #F5F5F5;
+    font-family: "Source Code Pro";
+    margin-bottom: 15px;
+}
+.footer-email-area{
+    margin: auto;
+}
+.footer-email h1{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    font-family: "Source Code Pro";
+    color: #F5F5F5;
+    margin-bottom: 45px;
+}
+.footer-email h2{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    font-family: "Open Sans";
+    color: #BBBBBB;
+}
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.redes-sociais img{
+    margin: 10px 10px 10px 0;
+}
+.email-subscribe{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.email-subscribe img{
+    position: absolute;
+    margin-left: 10px;
+    z-index: 1;
+}
+.email-subscribe input{
+    padding: 10px;
+    padding-left: 45px;
+    color: #ADADAD;
+    background-color: #424242;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    width: 350px;
+}
+.email-subscribe input::placeholder{
+    color: #ADADAD;
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    font-family: "Open Sans";
+}
+.email-subscribe button{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Source Code Pro";
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 0;
+}
+.footer-direitos-reservados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+.footer-direitos-reservados h1{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-primeiro);
+    font-family: "Open Sans";
+    color: #F5F5F5;
+}
+.footer-direitos-reservados span{
+    font-size: var(--fts-primeira);
+    font-weight: var(--ft--weight-segunda);
+    font-family: "Open Sans";
+    color: #F5F5F5;
+}
+@media (min-width:1025px) and (max-width:1440px){
+    .container-conteudo{
+        max-width: 1300px;
+    }
+    .header-area1 {
+        width: 780px;
+        margin-left: 30px;
+    }
+    .header-area1-item2-localizacao-search input {
+        width: 570px;
+    }
+    .header-area2 img{
+        width: 520px;
+    }
+    .lista-de-pratos {
+        justify-items: center;
+    }
+    .lista-de-pratos-item1 img {
+        width: 300px;
+    }
+    .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1 > img{
+        width: 250px;
+    }
+    .featured-restaurants-body{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .featured-restaurants-item-area:nth-child(4){
+        display: none;
+    }
+    .featured-restaurants-item-area:nth-child(8){
+        display: none;
+    }
+    .food-lista img{
+        width: 200px;
+    }
+    .food-title {
+        margin-left: 20px;
+    }
+    .app-area {
+        display: flex;
+        justify-content: center;
+    }
+    .app-header {
+        width: 1400px;
+        padding: 20px;
+    }
+    .app-item1{
+        margin-left: 50px;
+    }
+    .ilustracao-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustracao-text h1{
+        font-size: var(--fts-quarta);
+    }
+    .ilustracao-img img {
+        object-fit: cover;
+        width: 650px;
+    }
+    .banner-area{
+        max-height: 300px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+        font-family: "Source Code Pro";
+        color: white;
+        text-align: center;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .container-conteudo{
+        max-width: 1000px;
+    }
+    .header-area1 {
+        width: 500px;
+        margin-left: 30px;
+    }
+    .header-area1-item2-localizacao-search input {
+        width: 570px;
+    }
+    .header-area2 img{
+        width: 520px;
+    }
+    .lista-de-pratos {
+        justify-items: center;
+    }
+    .lista-de-pratos-item1 img {
+        width: 300px;
+    }
+    .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1 > img{
+        width: 250px;
+    }
+    .featured-restaurants-body{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .featured-restaurants-item-area:nth-child(4){
+        display: none;
+    }
+    .featured-restaurants-item-area:nth-child(8){
+        display: none;
+    }
+    .food-lista img{
+        width: 200px;
+    }
+    .food-title {
+        margin-left: 20px;
+    }
+    .app-area {
+        display: flex;
+        justify-content: center;
+    }
+    .app-header {
+        width: 1400px;
+        padding: 20px;
+    }
+    .app-item1{
+        margin-left: 50px;
+    }
+    .ilustracao-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustracao-text h1{
+        font-size: var(--fts-quarta);
+    }
+    .ilustracao-img img {
+        object-fit: cover;
+        width: 650px;
+    }
+    .banner-area{
+        max-height: 300px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+        font-family: "Source Code Pro";
+        color: white;
+        text-align: center;
+    }
 }
