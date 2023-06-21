@@ -1983,7 +1983,7 @@ footer{
         grid-template-columns: 1fr;
     }
     .header-area1 {
-        width: 350px;
+        width: 300px;
         margin-left: 0px;
     }
     .header-area1-item h1{
@@ -2033,7 +2033,6 @@ footer{
     }
     .header-area2 img{
         width: 280px;
-        margin-right: 30px;
     }
     .lista-de-pratos {
         grid-template-columns: repeat(1,1fr);
