@@ -118,25 +118,25 @@ a{
     border-radius: 8px;
     font-family: "Source Code Pro";
 }
-.seacrch-body{
+.search-body{
     margin: 0 10px 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.seacrch-body img{
+.search-body img{
     margin-right: -35px;
     z-index: 1;
     padding: 5px 5px 5px 5px;
 }
-.seacrch-body input{
+.search-body input{
     outline: none;
     background: none;
     border: 0;
     color: black;
     padding: 5px 5px 5px 40px;
-    margin-top: auto;
+  
 }
 .seacrch-body input::placeholder{
     font-size: var(--fts-primeira);
@@ -145,6 +145,9 @@ a{
     padding: 5px 5px 5px 5px;
 }
 .login-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 10px 0 10px;
 }
 .header-area{
@@ -1039,12 +1042,23 @@ footer{
         display: flex;
         justify-content: center;
     }
+    .app-img{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .app-img img{
+       margin: 0;
+    }
     .app-header {
         width: 1400px;
         padding: 20px;
     }
     .app-item1{
         margin-left: 50px;
+    }
+    .app-text-img{
+        display: flex;
     }
     .ilustracao-area{
         display: flex;
@@ -1054,6 +1068,9 @@ footer{
     }
     .ilustracao-text h1{
         font-size: var(--fts-quarta);
+    }
+    .ilustracao-text a{
+        margin-top: 40px;
     }
     .ilustracao-img img {
         object-fit: cover;
@@ -1071,32 +1088,106 @@ footer{
 }
 @media (min-width:768px) and (max-width:1024px){
     .container-conteudo{
-        max-width: 1000px;
+        max-width: 700px;
+    }
+    .header{
+        grid-template-columns: 150px 250px 250px;
+    }
+    .header > img{
+        width: 150px;
+    }
+    .localizacao h1{
+        font-size: 10px;
+    }
+    .localizacao h2{
+        font-size: 10px;
+    }
+    .search-body input{
+        width: 150px;
+        padding-left: 40px;
+    }
+    .search-body input::placeholder{
+        font-size: 10px;
+    }
+    .login-body a{
+        font-size: 10px;
     }
     .header-area1 {
-        width: 500px;
-        margin-left: 30px;
+        width: 350px;
+        margin-left: 0px;
+    }
+    .header-area1-item h1{
+        font-size: var(--fts-segundo);
+    }
+    .header-area1-item h6{
+        font-size: 10px;
+    }
+    .header-area1-item2{
+        padding: 10px;
+
+    }
+    .header-area1-item2-transporte1 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte1 img{
+       width: 15px;
+       margin-right: 10px;
+    }
+    .header-area1-item2-transporte2 {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .header-area1-item2-transporte2 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte2 img{
+        width: 10px;
+        margin-right: 10px;
+     }
+    .header-area1-item2-localizacao-search{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .header-area1-item2-localizacao-search img{
+        width: 10px;
     }
     .header-area1-item2-localizacao-search input {
-        width: 570px;
+        width: 220px;
+    }
+    .header-area1-item2-localizacao-login {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .header-area1-item2-localizacao-login a{
+        font-size: 10px;
     }
     .header-area2 img{
-        width: 520px;
+        width: 350px;
     }
     .lista-de-pratos {
+        grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
     .lista-de-pratos-item1 img {
         width: 300px;
     }
+    .work-area-body{
+        grid-template-columns: repeat(2,1fr);
+    }
     .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1:nth-child(3){
+        display: none;
+    }
+    .popular-items-item1:nth-child(4){
         display: none;
     }
     .popular-items-item1 > img{
         width: 250px;
     }
     .featured-restaurants-body{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .featured-restaurants-item-area:nth-child(4){
         display: none;
@@ -1104,12 +1195,22 @@ footer{
     .featured-restaurants-item-area:nth-child(8){
         display: none;
     }
+    .featured-restaurants-item1-img > img {
+        width: 300px;
+    }
     .food-lista img{
         width: 200px;
     }
     .food-title {
         margin-left: 20px;
     }
+    .food-body{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .food-lista{
+        margin-bottom: 30px;
+    }
+    
     .app-area {
         display: flex;
         justify-content: center;
@@ -1118,8 +1219,36 @@ footer{
         width: 1400px;
         padding: 20px;
     }
-    .app-item1{
-        margin-left: 50px;
+    .app-body{
+        margin-top: 70px;
+    }
+    .app-img img{
+       width: 400px;
+    }
+    .app-text{
+        margin-left: 0;
+    }
+    .app-text h1{
+        font-size: var(--fts-terceira);
+    }
+    .app-text p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .app-text-img{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .app-text-img img{
+        width: 130px;
+    }
+    .app-item1 img{
+        width: 20px;
+    }
+    .app-item1 h1{
+        font-size: 15px;
+        margin-right: 30px;
+        margin-left: 25px
     }
     .ilustracao-area{
         display: flex;
@@ -1127,20 +1256,50 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .ilustraca-item1{
+        margin-bottom: 70px;
+    }
+    .ilustracao-text{
+        margin-left: 35px;
+        margin-right: 20px;
+    }
     .ilustracao-text h1{
-        font-size: var(--fts-quarta);
+        font-size: var(--fts-segundo);
+    }
+    .ilustracao-text p{
+        font-size: 10px;
+    }
+    .ilustracao-text a{
+        width: 300px;
+        padding: 10px;
+        height: 35px;
+        margin-top: 30px;
     }
     .ilustracao-img img {
         object-fit: cover;
-        width: 650px;
+        width: 350px;
     }
     .banner-area{
-        max-height: 300px;
+        max-height: 160px;
     }
     .banner-text h1 {
-        font-size: 30px;
+        font-size: 20px;
         font-family: "Source Code Pro";
         color: white;
         text-align: center;
+    }
+    .banner-text a {
+        margin-top: 30px;
+    }
+    .footer-cotato-area {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-email-area{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .footer-cidades h1,
+    .footer-item2 h2{
+        font-size: 15px;
     }
 }
