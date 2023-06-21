@@ -66,13 +66,35 @@ a{
 .button:hover{
     cursor: pointer;
 }
+.menu1{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu1 img{
+    width: 100px;
+}
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-mobile-linha{
+    width: 30px;
+    height: 2px;
+    background-color: var(--bg-primeiro);
+    margin: 5px;
+}
+.menu2{
+    display: flex;
+}
 /**Configurações gerais**/
 .header{
-   display: grid;
-   grid-template-columns: repeat( 3, 1fr);
-   justify-items: center;
-   align-items: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .localizacao{
     display: flex;
@@ -1090,11 +1112,8 @@ footer{
     .container-conteudo{
         max-width: 700px;
     }
-    .header{
-        grid-template-columns: 150px 250px 250px;
-    }
-    .header > img{
-        width: 150px;
+    .menu2 > img{
+        width: 200px;
     }
     .localizacao h1{
         font-size: 10px;
@@ -1301,5 +1320,1000 @@ footer{
     .footer-cidades h1,
     .footer-item2 h2{
         font-size: 15px;
+    }
+}
+@media (min-width:425px) and (max-width:767px){
+    .container-conteudo{
+        max-width: 375px;
+    }
+    .header{
+        display: inline;
+    }
+    .menu1{
+        display: flex;
+    }
+    .menu2{
+        display: none;
+    }
+
+    .header > img{
+        width: 150px;
+    }
+    .localizacao h1{
+        font-size: 10px;
+    }
+    .localizacao h2{
+        font-size: 10px;
+    }
+    .search-body input{
+        width: 150px;
+        padding-left: 40px;
+    }
+    .search-body input::placeholder{
+        font-size: 10px;
+    }
+    .login-body a{
+        font-size: 10px;
+    }
+    .header-area{
+        grid-template-columns: 1fr;
+    }
+    .header-area1 {
+        width: 350px;
+        margin-left: 0px;
+    }
+    .header-area1-item h1{
+        font-size: var(--fts-segundo);
+    }
+    .header-area1-item h6{
+        font-size: 13px;
+    }
+    .header-area1-item2{
+        padding: 10px;
+
+    }
+    .header-area1-item2-transporte1 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte1 img{
+       width: 15px;
+       margin-right: 10px;
+    }
+    .header-area1-item2-transporte2 {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .header-area1-item2-transporte2 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte2 img{
+        width: 10px;
+        margin-right: 10px;
+     }
+    .header-area1-item2-localizacao-search{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .header-area1-item2-localizacao-search img{
+        width: 10px;
+    }
+    .header-area1-item2-localizacao-search input {
+        width: 220px;
+    }
+    .header-area1-item2-localizacao-login {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .header-area1-item2-localizacao-login a{
+        font-size: 10px;
+    }
+    .header-area2 img{
+        width: 300px;
+        margin-right: 30px;
+    }
+    .lista-de-pratos {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .lista-de-pratos-item1 img {
+        width: 300px;
+    }
+    .work-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .work-area-body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1:nth-child(2){
+        display: none;
+    }
+    .popular-items-item1:nth-child(3){
+        display: none;
+    }
+    .popular-items-item1:nth-child(4){
+        display: none;
+    }
+    .popular-items-item1 > img{
+        width: 250px;
+    }
+    .featured-restaurants-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .featured-restaurants-body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .featured-restaurants-item-area:nth-child(4){
+        display: none;
+    }
+    .featured-restaurants-item-area:nth-child(8){
+        display: none;
+    }
+    .featured-restaurants-item1-img > img {
+        width: 300px;
+    }
+    .food-header{
+        align-items: center;
+    }
+    .food-lista img{
+        width: 200px;
+    }
+    .food-title {
+        margin-left: 10px;
+    }
+    .food-title h1{
+       font-size: var(--fts-primeira);
+    }
+    .food-busca a{
+        font-size: 16px;
+    }
+    .food-body{
+        grid-template-columns: 1fr;
+    }
+    .food-lista{
+        margin-bottom: 30px;
+    }
+    
+    .app-area {
+        display: flex;
+        justify-content: center;
+    }
+    .app-header {
+        width: 400px;
+        padding: 20px;
+    }
+    .app-body{
+        margin-top: 70px;
+    }
+    .app-img{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .app-img img{
+       width: 210px;
+       margin-bottom: 0px;
+    }
+    .app-text{
+        margin-left: 0;
+    }
+    .app-text h1{
+        font-size: var(--fts-primeira);
+    }
+    .app-text p{
+        font-size: 5px;
+        margin-top: 10px;
+    }
+    .app-text-img{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .app-text-img img{
+        width: 80px;
+    }
+    .app-item1{
+        margin-left: 5px;
+    }
+    .app-item1 img{
+        width: 15px;
+    }
+    .app-item1 h1{
+        font-size: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .ilustracao-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustraca-item1{
+        margin-bottom: 30px;
+    }
+    .ilustracao-text{
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+    .ilustracao-text h1{
+        font-size: 8px;
+    }
+    .ilustracao-text p{
+        font-size: 4px;
+        margin-top: 5px;
+    }
+    .ilustracao-text a{
+        width: 100px;
+        padding: 5px;
+        height: 25px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+    .ilustracao-img img {
+        object-fit: cover;
+        width: 212px;
+    }
+    .banner-area{
+        max-height: 89px;
+    }
+    .banner-text h1 {
+        font-size: 10px;
+        font-family: "Source Code Pro";
+        color: white;
+        text-align: center;
+    }
+    .banner-text a {
+        margin-top: 15px;
+        font-size: 5px;
+        width: 85px;
+        height: 20px;
+        padding: 6px;
+    }
+    .footer-cotato-area {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-header h1{
+        font-size:15px;
+    }
+    .footer-body{
+        margin-top: 15px;
+    }
+    .footer-email-area{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .footer-cidades-area{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-cidades{
+        margin-bottom: 30px;
+    }
+    .footer-cidades h1,
+    .footer-item2 h2{
+        font-size: 10px;
+    }
+    .footer-cotato-area{
+        margin-top: 50px;
+    }
+    .footer-cotato{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-item2 h1{
+        font-size: 15px;
+    }
+    .footer-email h1{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .email-subscribe input{
+        width: 212px;
+        font-size: 10px;
+    }
+    .redes-sociais h2{
+        font-size: 10px;
+    }
+    .email-subscribe input::placeholder{
+        font-size: 10px;
+    }
+    .email-subscribe button{
+        font-size: 15px;
+    }
+    .footer-direitos-reservados h1,
+    .footer-direitos-reservados h1 span{
+        font-size: 10px;
+    }
+}
+@media (min-width:375px) and (max-width:424px){
+    .container-conteudo{
+        max-width: 335px;
+    }
+    .header{
+        display: inline;
+    }
+    .menu1{
+        display: flex;
+    }
+    .menu2{
+        display: none;
+    }
+
+    .header > img{
+        width: 150px;
+    }
+    .localizacao h1{
+        font-size: 10px;
+    }
+    .localizacao h2{
+        font-size: 10px;
+    }
+    .search-body input{
+        width: 150px;
+        padding-left: 40px;
+    }
+    .search-body input::placeholder{
+        font-size: 10px;
+    }
+    .login-body a{
+        font-size: 10px;
+    }
+    .header-area{
+        grid-template-columns: 1fr;
+    }
+    .header-area1 {
+        width: 350px;
+        margin-left: 0px;
+    }
+    .header-area1-item h1{
+        font-size: var(--fts-segundo);
+    }
+    .header-area1-item h6{
+        font-size: 13px;
+    }
+    .header-area1-item2{
+        padding: 10px;
+
+    }
+    .header-area1-item2-transporte1 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte1 img{
+       width: 15px;
+       margin-right: 10px;
+    }
+    .header-area1-item2-transporte2 {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .header-area1-item2-transporte2 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte2 img{
+        width: 10px;
+        margin-right: 10px;
+     }
+    .header-area1-item2-localizacao-search{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .header-area1-item2-localizacao-search img{
+        width: 10px;
+    }
+    .header-area1-item2-localizacao-search input {
+        width: 220px;
+    }
+    .header-area1-item2-localizacao-login {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .header-area1-item2-localizacao-login a{
+        font-size: 10px;
+    }
+    .header-area2 img{
+        width: 300px;
+        margin-right: 30px;
+    }
+    .lista-de-pratos {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .lista-de-pratos-item1 img {
+        width: 300px;
+    }
+    .work-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .work-area-body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .popular-items-header h1 {
+        font-size: var(--fts-terceira);
+    }
+    .popular-items-body {
+        margin-top: 30px;
+        }
+    .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1:nth-child(2){
+        display: none;
+    }
+    .popular-items-item1:nth-child(3){
+        display: none;
+    }
+    .popular-items-item1:nth-child(4){
+        display: none;
+    }
+    .popular-items-item1 > img{
+        width: 170px;
+    }
+    .featured-restaurants-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .featured-restaurants-body{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .featured-restaurants-item-area:nth-child(4){
+        display: none;
+    }
+    .featured-restaurants-item-area:nth-child(8){
+        display: none;
+    }
+    .featured-restaurants-item1-desconto h1,
+    .featured-restaurants-item1-temp h1{
+        font-size: 15px;
+    }
+    .featured-restaurants-item1-desconto img,
+    .featured-restaurants-item1-temp img{
+        width: 15px;
+    }
+    .featured-restaurants-item1-temp {
+        margin-left: -100px;
+    }
+    .featured-restaurants-item1-img > img {
+        width: 250px;
+    }
+    .food-header{
+        align-items: center;
+    }
+    .food-lista img{
+        width: 200px;
+    }
+    .food-title {
+        margin-left: 10px;
+    }
+    .food-title h1{
+       font-size: var(--fts-primeira);
+    }
+    .food-busca a{
+        font-size: 16px;
+    }
+    .food-body{
+        grid-template-columns: 1fr;
+    }
+    .food-lista{
+        margin-bottom: 30px;
+    }
+    
+    .app-area {
+        display: flex;
+        justify-content: center;
+    }
+    .app-header {
+        width: 400px;
+        padding: 20px;
+    }
+    .app-body{
+        margin-top: 70px;
+    }
+    .app-img{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .app-img img{
+       width: 210px;
+       margin-bottom: 0px;
+    }
+    .app-text{
+        margin-left: 0;
+    }
+    .app-text h1{
+        font-size: var(--fts-primeira);
+    }
+    .app-text p{
+        font-size: 5px;
+        margin-top: 10px;
+    }
+    .app-text-img{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .app-text-img img{
+        width: 80px;
+    }
+    .app-item1{
+        margin-left: 5px;
+    }
+    .app-item1 img{
+        width: 15px;
+    }
+    .app-item1 h1{
+        font-size: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .ilustracao-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustraca-item1{
+        margin-bottom: 30px;
+    }
+    .ilustracao-text{
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+    .ilustracao-text h1{
+        font-size: 8px;
+    }
+    .ilustracao-text p{
+        font-size: 4px;
+        margin-top: 5px;
+    }
+    .ilustracao-text a{
+        width: 100px;
+        padding: 5px;
+        height: 25px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+    .ilustracao-img img {
+        object-fit: cover;
+        width: 212px;
+    }
+    .banner-area{
+        max-height: 78px;
+    }
+    .banner-text h1 {
+        font-size: 10px;
+        font-family: "Source Code Pro";
+        color: white;
+        text-align: center;
+    }
+    .banner-text a {
+        margin-top: 15px;
+        font-size: 5px;
+        width: 85px;
+        height: 20px;
+        padding: 6px;
+    }
+    .footer-cotato-area {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-header h1{
+        font-size:15px;
+    }
+    .footer-body{
+        margin-top: 15px;
+    }
+    .footer-email-area{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .footer-cidades-area{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-cidades{
+        margin-bottom: 30px;
+    }
+    .footer-cidades h1,
+    .footer-item2 h2{
+        font-size: 10px;
+    }
+    .footer-cotato-area{
+        margin-top: 50px;
+    }
+    .footer-cotato{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-item2 h1{
+        font-size: 15px;
+    }
+    .footer-email h1{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .email-subscribe input{
+        width: 212px;
+        font-size: 10px;
+    }
+    .redes-sociais h2{
+        font-size: 10px;
+    }
+    .email-subscribe input::placeholder{
+        font-size: 10px;
+    }
+    .email-subscribe button{
+        font-size: 15px;
+    }
+    .footer-direitos-reservados h1,
+    .footer-direitos-reservados h1 span{
+        font-size: 10px;
+    }
+}
+@media (min-width:320px) and (max-width:374px){
+    .container-conteudo{
+        max-width: 280px;
+    }
+    .header{
+        display: inline;
+    }
+    .menu1{
+        display: flex;
+    }
+    .menu2{
+        display: none;
+    }
+
+    .header > img{
+        width: 150px;
+    }
+    .localizacao h1{
+        font-size: 10px;
+    }
+    .localizacao h2{
+        font-size: 10px;
+    }
+    .search-body input{
+        width: 150px;
+        padding-left: 40px;
+    }
+    .search-body input::placeholder{
+        font-size: 10px;
+    }
+    .login-body a{
+        font-size: 10px;
+    }
+    .header-area{
+        grid-template-columns: 1fr;
+    }
+    .header-area1 {
+        width: 350px;
+        margin-left: 0px;
+    }
+    .header-area1-item h1{
+        font-size: var(--fts-segundo);
+    }
+    .header-area1-item h6{
+        font-size: 8px;
+    }
+    .header-area1-item2{
+        padding: 10px;
+
+    }
+    .header-area1-item2-transporte1 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte1 img{
+       width: 15px;
+       margin-right: 10px;
+    }
+    .header-area1-item2-transporte2 {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .header-area1-item2-transporte2 h1{
+        font-size: 10px;
+    }
+    .header-area1-item2-transporte2 img{
+        width: 10px;
+        margin-right: 10px;
+     }
+    .header-area1-item2-localizacao-search{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .header-area1-item2-localizacao-search img{
+        width: 10px;
+    }
+    .header-area1-item2-localizacao-search input {
+        width: 160px;
+    }
+    .header-area1-item2-localizacao-login {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .header-area1-item2-localizacao-login a{
+        font-size: 10px;
+    }
+    .header-area2 img{
+        width: 280px;
+        margin-right: 30px;
+    }
+    .lista-de-pratos {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .lista-de-pratos-item1-desconto {
+        width: 130px;
+        height: 65px;
+        margin-right: -130px;
+    }
+    .lista-de-pratos-item1-desconto h1{
+        font-size: var(--fts-terceira);
+    }
+    .lista-de-pratos-item1-desconto2 h5,
+    .lista-de-pratos-item1-desconto2 h6{
+        font-size: 25px;
+    }
+    .lista-de-pratos-item1 img {
+        width: 260px;
+    }
+    .work-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .work-area-body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .work-item{
+        width: 280px;
+    }
+    .popular-items-header h1 {
+        font-size: var(--fts-segundo);
+    }
+    .popular-items-body {
+        margin-top: 30px;
+    }
+    .popular-items-item1:first-child{
+        display: none;
+    }
+    .popular-items-item1:nth-child(2){
+        display: none;
+    }
+    .popular-items-item1:nth-child(3){
+        display: none;
+    }
+    .popular-items-item1:nth-child(4){
+        display: none;
+    }
+    .popular-items-item1 > img{
+        width: 170px;
+    }
+    .popular-items-item1 h1,
+    .popular-items-item1 h3{
+        font-size: var(--fts-primeira);
+    }
+    .popular-items-item1-localização h2 {
+        font-size: var(--fts-primeira);
+    }
+    .featured-restaurants-header h1{
+        font-size: var(--fts-terceira);
+    }
+    .featured-restaurants-body{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .featured-restaurants-item1 {
+        margin: 20px 20px 50px 20px;
+    }
+    .featured-restaurants-item-area:nth-child(4){
+        display: none;
+    }
+    .featured-restaurants-item-area:nth-child(8){
+        display: none;
+    }
+    .featured-restaurants-item1-desconto h1,
+    .featured-restaurants-item1-temp h1{
+        font-size: 15px;
+    }
+    .featured-restaurants-item1-desconto img,
+    .featured-restaurants-item1-temp img{
+        width: 15px;
+    }
+    .featured-restaurants-item1-temp {
+        margin-left: -100px;
+    }
+    .featured-restaurants-item1-img > img {
+        width: 250px;
+    }
+    .food-header{
+        align-items: center;
+    }
+    .food-lista img{
+        width: 200px;
+    }
+    .food-title {
+        margin-left: 10px;
+    }
+    .food-title h1{
+       font-size: var(--fts-primeira);
+    }
+    .food-busca a{
+        font-size: 16px;
+    }
+    .food-body{
+        grid-template-columns: 1fr;
+    }
+    .food-lista{
+        margin-bottom: 30px;
+    }
+    
+    .app-area {
+        display: flex;
+        justify-content: center;
+    }
+    .app-header {
+        width: 300px;
+        padding: 20px;
+    }
+    .app-body{
+        margin-top: 70px;
+    }
+    .app-img{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .app-img img{
+       width: 210px;
+       margin-bottom: 0px;
+    }
+    .app-text{
+        margin-left: 0;
+    }
+    .app-text h1{
+        font-size: var(--fts-primeira);
+    }
+    .app-text p{
+        font-size: 5px;
+        margin-top: 10px;
+    }
+    .app-text-img{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .app-text-img img{
+        width: 80px;
+    }
+    .app-item1{
+        margin-left: 5px;
+    }
+    .app-item1 img{
+        width: 15px;
+    }
+    .app-item1 h1{
+        font-size: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .ilustracao-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustraca-item1{
+        margin-bottom: 30px;
+    }
+    .ilustracao-text{
+        margin-left: 17px;
+        margin-right: 7px;
+    }
+    .ilustracao-text h1{
+        font-size: 8px;
+    }
+    .ilustracao-text p{
+        font-size: 4px;
+        margin-top: 5px;
+    }
+    .ilustracao-text a{
+        width: 100px;
+        padding: 5px;
+        height: 25px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+    .ilustracao-img img {
+        object-fit: cover;
+        width: 180px;
+    }
+    .banner-area{
+        max-height: 68px;
+    }
+    .banner-text h1 {
+        font-size: 10px;
+        font-family: "Source Code Pro";
+        color: white;
+        text-align: center;
+    }
+    .banner-text a {
+        margin-top: 15px;
+        font-size: 5px;
+        width: 85px;
+        height: 20px;
+        padding: 6px;
+    }
+    .footer-cotato-area {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-header h1{
+        font-size:15px;
+    }
+    .footer-body{
+        margin-top: 10px;
+    }
+    .footer-email-area{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .footer-cidades-area{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-cidades{
+        margin-bottom: 30px;
+    }
+    .footer-cidades h1{
+        margin-top: 10px;
+    }
+    .footer-cidades h1,
+    .footer-item2 h2{
+        font-size: 5px;
+    }
+    .footer-cotato-area{
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    .footer-cotato{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-item2 h1{
+        font-size: 10px;
+    }
+    .footer-item2 h2{
+       margin-bottom: 10px;
+    }
+    .footer-email-area {
+        margin: 0;
+        margin-top: 15px;
+    }
+    .footer-email h1{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .footer-email h2{
+        font-size: 6px;
+    }
+    .email-subscribe img {
+    width: 15px;
+    }
+    .email-subscribe input{
+        width: 160px;
+        font-size: 10px;
+    }
+    .redes-sociais h2{
+        font-size: 6px;
+    }
+    .redes-sociais img {
+        width: 20px;
+        padding: 5px;
+        margin: 5px 5px 5px 0;
+    }
+    .email-subscribe input::placeholder{
+        font-size: 5px;
+    }
+    .email-subscribe button{
+        font-size: 10px;
+    }
+    .footer-direitos-reservados h1,
+    .footer-direitos-reservados h1 span{
+        font-size: 6px;
+    }
+    .footer-direitos-reservados {
+        padding-bottom: 30px;
     }
 }
